@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
   name_hash["new_key"] = 100000
   lowest_value = name_hash["new_key"]
   name_hash.each_value do |value|
-    if value < lowest_value
+    if value == nil || value < lowest_value
       lowest_value = value
     end
   end
